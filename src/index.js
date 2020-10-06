@@ -27,7 +27,12 @@ const createMainContainer = () => {
   return container;
 };
 
-export default async ({ element, containerWidth, containerElementTag = DEFAULT_CONTAINER_ELEMENT, containerId = RENDER_CONTAINER_ID}) => {
+export default async ({
+  element,
+  containerWidth,
+  containerElementTag = DEFAULT_CONTAINER_ELEMENT,
+  containerId = RENDER_CONTAINER_ID,
+}) => {
   if (typeof document === 'undefined') {
     return;
   }
